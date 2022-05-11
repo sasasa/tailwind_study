@@ -1,0 +1,16 @@
+2系
+npm init -y
+npm install -D tailwindcss@2.0.2 postcss@8.2.2 autoprefixer@10.1.0
+
+npx tailwindcss init --full
+npx tailwindcss init
+
+PostCSS Language Support
+
+npm install cross-env
+
+3系
+npm init -y
+npm install -D tailwindcss
+npx tailwindcss init --full
+npx tailwindcss init

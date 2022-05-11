@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- インライン要素には適用されない -->
+  <span class="border border-red-500 w-60">spanタグ</span>
+  <div class="border border-red-500 w-60">divタグ</div>
+
+  <!-- 幅固定 -->
+  <div class="border border-red-500 w-96">divタグ固定</div>
+
+  <!-- 幅可変 -->
+  <div class="border border-red-500 w-full">divタグ可変</div>
+  <div class="border border-red-500 w-1/2">divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変divタグ可変</div>
+
+  <!-- 幅Max指定 -->
+  <div class="border-8 border-red-500 max-w-2xl">divタグ可変MAX</div>
+
+  <!-- flexとの組み合わせ -->
+  <div class="flex justify-around">
+    <div class="w-1/2 border border-red-500">左側</div>
+    <div class="w-1/2 border border-red-500">右側</div>
+  </div>
+</body>
+</html>

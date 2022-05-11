@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-image {
+      background-image: url('images/jpg.jpg');
+    }
+  </style>
+</head>
+<body>
+  <!-- background-image -->
+  <div class="mb-16 h-40 w-40 bg-image">
+    バックグラウンドimage
+  </div>
+  <!-- 画像の表示方法を変える -->
+  <div class="mb-16 h-40 w-40 bg-image bg-contain bg-center bg-no-repeat">
+    バックグラウンドimage
+  </div>
+
+
+  <!-- imgタグ -->
+  <img class="mb-16 w-96" src="images/jpg.jpg">
+  <!-- 縦横比が崩れる -->
+  <img class="mb-16 w-96 h-24" src="images/jpg.jpg">
+  <!-- 縦横比が崩れないように切り抜きする -->
+  <img class="mb-16 w-96 h-24 object-cover" src="images/jpg.jpg">
+</body>
+</html>

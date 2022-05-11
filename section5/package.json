@@ -1,0 +1,22 @@
+{
+  "name": "section5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "dev": "tailwindcss build src/styles.css -o public/styles.css",
+    "build": "cross-env NODE_ENV=production tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "tailwindcss": "^2.0.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

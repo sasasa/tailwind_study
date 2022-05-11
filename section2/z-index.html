@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <img src="images/jpg.jpg" alt="" class="w-96">
+    <span>文字を重ねたい</span>
+  </div>
+  
+  <div class="mt-16 relative">
+    <img src="images/jpg.jpg" alt="" class="w-96 absolute">
+    <span class="absolute top-16 left-16">文字を重ねたい</span>
+  </div>
+
+  <div class="mt-96 relative w-96 h-60 bg-red-400">
+    <div class="z-10 absolute w-40 h-40 top-8 left-8 bg-blue-300"></div>
+    <div class="absolute w-40 h-40 top-16 left-16 bg-blue-500"></div>
+  </div>
+
+  <div class="fixed bottom-8 right-8 border">
+    戻るボタン
+  </div>
+  <div class="sticky top-0 p-2 bg-green-300">
+    Stickyヘッダー
+  </div>
+  <div class="h-96">aaaa</div>
+  <div class="h-96">aaaa</div>
+  <div class="h-96">aaaa</div>
+  <div class="h-96">aaaa</div>
+
+</body>
+</html>

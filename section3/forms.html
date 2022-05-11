@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+  縦2 => 横2
+  <div class="md:flex justify-center mb-16">
+    <div class="text-center py-4 md:w-1/2">
+      フォームに必要事項を入力してください。
+    </div>
+    <div class="py-4 md:w-1/2">
+      <div class="w-10/12 mx-auto md:max-w-md">
+        <form>
+          <div class="mb-8">
+            <label for="your_name" class="text-sm block">お名前</label>
+            <input id="your_name" type="text" class="placeholder-gray-500 placeholder-opacity-50 border-b w-full py-2 focus:outline-none focus:border-b-2 focus:border-blue-500" placeholder="山田太郎">
+          </div>
+          <div class="mb-8">
+            <label for="email" class="text-sm block">メールアドレス</label>
+            <input type="email" id="email" class="border-b w-full py-2 focus:outline-none focus:border-b-2 focus:border-blue-500" placeholder="test@gmail.com">
+          </div>
+          <button class="bg-blue-500 text-white font-semibold py-2 px-8 rounded-md focus:outline-none">登録する</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

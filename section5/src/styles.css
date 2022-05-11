@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-blue-500 text-white font-semibold py-2 px-8 rounded-md focus:outline-none;
+}
+
+@layer base{
+  h1 {
+    @apply text-3xl text-center bg-blue-500;
+  }
+  h2 {
+    @apply text-xl text-center bg-blue-500;
+  }
+  h3 {
+    @apply text-lg text-center bg-blue-500;
+  }
+}

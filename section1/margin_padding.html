@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- インライン要素 -->
+  <!-- m-4 1rem -->
+  <span class="border border-red-500 m-8">spanタグ1</span>
+  <span class="border border-red-500 p-12">spanタグ2</span>
+  <!-- ブロック要素 -->
+  <p class="border border-blue-500 mt-16">pはパラグラフの略で文章のひとまとまりのことです。</p>
+  <p class="border border-blue-500 m-8 p-8">pはパラグラフの略で文章のひとまとまりのことです。</p>
+  <p class="border border-blue-500 mx-16">pはパラグラフの略で文章のひとまとまりのことです。</p>
+  <!-- ブロック要素の中にインライン要素 -->
+  <p class="border border-green-500 mt-16">
+    pはパラグラフの略です。
+    <span class="border border-green-500 m-8">spanタグです。１</span>
+    <span class="border border-green-500 p-12">spanタグです。２</span>
+  </p>
+  <!-- ブロック要素の中にブロック要素 -->
+  <!-- ブロックを横に並べる -->
+  <div class="border border-pink-500 mt-20 flex justify-around">
+    親ブロック
+    <div class="border border-pink-500">子ブロック１</div>
+    <div class="border border-pink-500 m-12">子ブロック２</div>
+  </div>
+</body>
+</html>

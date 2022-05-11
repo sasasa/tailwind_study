@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- opacity visible hidden の比較 -->
+  opacity-0
+  <div class="mb-16 flex justify-around">
+    <div class="flex-grow border-2 border-blue-300 ">A</div>
+    <div class="opacity-0 flex-grow border-2 border-blue-300 "><button>Button</button>B</div>
+    <div class="flex-grow border-2 border-blue-300 ">C</div>
+  </div>
+  invisible
+  <div class="mb-16 flex justify-around">
+    <div class="flex-grow border-2 border-blue-300 ">A</div>
+    <div class="invisible flex-grow border-2 border-blue-300 "><button>Button</button>B</div>
+    <div class="flex-grow border-2 border-blue-300 ">C</div>
+  </div>
+  hidden
+  <div class="mb-16 flex justify-around">
+    <div class="flex-grow border-2 border-blue-300 ">A</div>
+    <div class="hidden flex-grow border-2 border-blue-300 "><button>Button</button>B</div>
+    <div class="flex-grow border-2 border-blue-300 ">C</div>
+  </div>
+</body>
+</html>

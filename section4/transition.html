@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="mb-16">
+    durationあり
+    <button class="transition duration-1000 bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+    durationなし
+    <button class="bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  </div>
+  <div class="mb-16">
+    ease-in(ゆっくり開始)
+    <button class="transition duration-1000 ease-in bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+    ease-out(ゆっくり終了)
+    <button class="transition duration-1000 ease-out bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  </div>
+  <div class="mb-16">
+    delayあり
+    <button class="transition duration-1000 delay-1000 bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+    delayなし
+    <button class="transition duration-1000 bg-blue-500 hover:bg-blue-300 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  </div>
+</body>
+</html>

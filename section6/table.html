@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="min-h-screen bg-gray-100">
+    <nav class="bg-white py-2 md:py-4">
+      <div class="container px-4 mx-auto md:flex md:items-center">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="font-bold text-xl text-indigo-600">TailWindCssTest</a>
+          <button id="navbar-toggle" class="md:hidden border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <div id="navbar-collapse" class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
+          <a href="index.html" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">Home</a>
+          <a href="table.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">テーブル</a>
+          <a href="form.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">フォーム</a>
+          <a href="item_index.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">商品一覧</a>
+          <a href="item_detail.html" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">商品詳細</a>
+        </div>
+      </div>
+    </nav>
+    <div class="py-12">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+          <div class="md:px-6 py-6 bg-white border-b border-gray-200">
+            <section class="text-gray-600 body-font">
+              <div class="container md:px-5 py-4 mx-auto">
+                <div class="w-full mx-auto overflow-auto">
+                  <table class="table-auto w-full text-left whitespace-no-wrap">
+                    <thead>
+                      <tr>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">Plan</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Speed</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Storage</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Price</th>
+                        <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="px-4 py-3">Start</td>
+                        <td class="px-4 py-3">5 Mb/s</td>
+                        <td class="px-4 py-3">15 GB</td>
+                        <td class="px-4 py-3 text-lg text-gray-900">Free</td>
+                        <td class="w-10 text-center">
+                          <input name="plan" type="radio">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">Pro</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">25 Mb/s</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">25 GB</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$24</td>
+                        <td class="border-t-2 border-gray-200 w-10 text-center">
+                          <input name="plan" type="radio">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">Business</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">36 Mb/s</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3">40 GB</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$50</td>
+                        <td class="border-t-2 border-gray-200 w-10 text-center">
+                          <input name="plan" type="radio">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Exclusive</td>
+                        <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">48 Mb/s</td>
+                        <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">120 GB</td>
+                        <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$72</td>
+                        <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                          <input name="plan" type="radio">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  const toggleBtn = document.querySelector("#navbar-toggle");
+  const collapse = document.querySelector("#navbar-collapse");
+
+  toggleBtn.onclick = () => {
+    collapse.classList.toggle("hidden");
+    collapse.classList.toggle("flex");
+  };
+  </script>
+</body>
+</html>

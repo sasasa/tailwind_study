@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- SP -> Tab -> PC -->
+  横2 => 横2
+  <div class="flex justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦2 => 横2
+  <div class="md:flex justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦2 => 横2 幅指定 5/12 7/12
+  <div class="md:flex justify-center mb-16">
+    <div class="md:w-5/12 text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="md:w-7/12 text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦2 => 横2 逆順
+  <div class="md:flex flex-row-reverse justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-blue-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  横3 => 横3
+  <div class="flex justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦3 => 横3
+  <div class="md:flex justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦3 => 横3 幅指定 3/12 6/12 3/12
+  <div class="md:flex justify-center mb-16">
+    <div class="md:w-3/12 text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="md:w-6/12 text-center border border-red-300 py-4 flex-grow">あああ</div>
+    <div class="md:w-3/12 text-center border border-red-300 py-4 flex-grow">あああ</div>
+  </div>
+
+  縦2横2 => 横4
+  <div class="flex justify-center flex-wrap mb-16" class="text-center border border-red-300 py-4 w-1/2 md:w-1/4">
+    <div class="text-center border border-red-300 py-4 w-1/2 md:w-1/4">左上</div>
+    <div class="text-center border border-red-300 py-4 w-1/2 md:w-1/4">右上</div>
+    <div class="text-center border border-red-300 py-4 w-1/2 md:w-1/4">左下</div>
+    <div class="text-center border border-red-300 py-4 w-1/2 md:w-1/4">右下</div>
+  </div>
+</body>
+</html>

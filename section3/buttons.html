@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  1番、2番、3番 優先度を付けて<br>
+
+  <button class="bg-blue-500 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  <button class="text-blue-500 border border-blue-500 font-semibold py-2 px-8 rounded-md">2番目</button>
+  <button class="text-blue-500 underline font-semibold py-2 px-8">3番目</button>
+ 
+  <div class="mb-16"></div>
+ 
+  <button class="bg-red-500 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  <button class="text-red-500 border border-red-500 font-semibold py-2 px-8 rounded-md">2番目</button>
+  <button class="text-gray-500 font-semibold py-2 px-8">3番目</button>
+
+  <div class="mb-16"></div>
+  レスポンシブ対応・固定、可変<br>
+  <button class="w-40 md:w-80 bg-blue-500 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+  <div class="mb-8"></div>
+  <button class="w-1/2 max-w-md bg-blue-500 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+
+  <div class="mb-16"></div>
+
+  縦2 => 横2
+  <div class="md:flex justify-center mb-16">
+    <div class="text-center border border-red-300 py-4 flex-grow">
+      <button class="w-1/2 bg-blue-500 text-white font-semibold py-2 px-8 rounded-md">1番目</button>
+    </div>
+    <div class="text-center border border-red-300 py-4 flex-grow">
+      <button class="w-1/2 text-blue-500 border border-blue-500 font-semibold py-2 px-8 rounded-md">2番目</button>
+    </div>
+  </div>
+</body>
+</html>

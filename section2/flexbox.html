@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- メニュー（PC） -->
+  <header class="md:flex justify-between">
+    <h1 class="pl-8">ロゴ</h1>
+    <nav>
+      <ul class="md:flex justify-end md:space-x-16 pr-8">
+        <li>Home</li>
+        <li>Information</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 横並び -->
+  <section class="mt-16">
+    <h2 class="text-center mb-8">横並びのサンプル</h2>
+    <div class="flex justify-center space-x-16">
+      <div class="w-1/4 border text-center">
+        <h3 class="p-2">タイトル</h3>
+        <p class="p-4">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+      </div>
+      <div class="w-1/4 border text-center">
+        <h3 class="p-2">タイトル</h3>
+        <p class="p-4">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+      </div>
+      <div class="w-1/4 border text-center">
+        <h3 class="p-2">タイトル</h3>
+        <p class="p-4">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 画像と文字を左右入れ替えて表示 -->
+  <section class="mt-16">
+    <h2 class="text-center mb-8">入れ替えテスト</h2>
+    <div class="flex items-center">
+      <div class="p-16 w-1/2">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</div>
+      <img src="images/jpg.jpg" alt="" width="50%">
+    </div>
+    <div class="flex flex-row-reverse items-center">
+      <div class="p-16 w-1/2">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</div>
+      <img src="images/jpg.jpg" alt="" width="50%">
+    </div>
+    <div class="flex items-center">
+      <div class="p-16 w-1/2">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</div>
+      <img src="images/jpg.jpg" alt="" width="50%">
+    </div>
+  </section>
+</body>
+</html>

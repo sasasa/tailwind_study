@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 文字、線、背景 -->
+  <p class="text-red-400">文字の色</p>
+  <div class="mt-16 border border-red-400">線の色</div>
+  <div class="mt-16 bg-green-900">背景の色</div>
+
+  <!-- hover: focus: -->
+  <button class="bg-indigo-600 hover:bg-indigo-400 focus:bg-indigo-100 text-white font-bold w-32 py-4">ボタン</button>
+  <input type="text" class="border-2 p-2 focus:outline-none focus:border-red-400">
+
+
+    <!-- 透明opacity -->
+    <p class="mt-16 text-red-400 text-opacity-50">文字の色</p>
+    <div class="mt-16 border border-red-400 border-opacity-50">線の色</div>
+    <div class="mt-16 bg-green-900 bg-opacity-50">背景の色</div>
+</body>
+</html>
